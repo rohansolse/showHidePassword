@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f8f8;
+}
+
+.inputBox{
+    position: relative;
+    height: 60px;
+    width: 400px;
+}
+
+.inputBox input{
+    position: absolute;
+    background-color: red;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    border: none;
+    background: transparent;  
+    padding: 0 20px; 
+    font-size: 18px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: -4px -4px 10px rgba(255,255,255,1),
+                inset 4px 4px 10px rgba(0,0,0,0.05),
+                inset -4px -4px 10px rgba(255,255,255,1),
+                4px 4px 10px rgba(0,0,0,0.05);
+}
+
+.inputBox input::placeholder{
+    color: #ccc;
+}
+
+#toggle{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background: url(/assets/img/show.png);
+    background-size: cover;
+    cursor: pointer;
+}
+
+
+.hide{
+    background: url(/assets/img/hide.png)!important;
+    background-size: cover !important;
+}
